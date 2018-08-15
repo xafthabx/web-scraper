@@ -1,0 +1,1612 @@
+
+
+<!DOCTYPE html><html><head><title>Works from the entire collection :: The Collection :: Art Gallery NSW</title><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=1080" /><meta property="og:image" content="http://www.artgallery.nsw.gov.au/media/static-content/agnsw_facebook_logo_blue.png" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="/favicon.ico" /><link rel="stylesheet" href="https://media.artgallery.nsw.gov.au/CACHE/css/aad93227b302.css" type="text/css" /><link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" /><link rel="stylesheet" type="text/css" media="print" href="https://media.artgallery.nsw.gov.au/chrome/styles/print.css" /><link rel="stylesheet" type="text/css" href="//media.artgallery.nsw.gov.au/static/gen/artsets_global_desktop.9d1e2665.css"><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="https://media.artgallery.nsw.gov.au/chrome/styles/ie8.css" /><![endif]--><!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="https://media.artgallery.nsw.gov.au/chrome/styles/ie7.css" /><![endif]--><style type="text/css">
+    #map_canvas {
+        margin: 0;
+        padding: 0;
+        height: 160px;
+        width:840px;
+        margin:0;
+    }
+    .multicol {
+        columns:120px 6;
+        -webkit-columns:120px 6; /* Safari and Chrome */
+        -moz-columns:120px 6; /* Firefox */
+    }
+    .multicol p {
+        margin:0 0 0 1.5em;
+        padding:0;
+        text-indent: -1.5em;
+    }
+</style><script type="text/javascript">
+	//<![CDATA[
+		(function(d,u){var r=u.getElementsByTagName("script")[0],q={},n={},t={},m=/loaded|complete/,b={},j="string",p=false,g=p,i=[],h="DOMContentLoaded",a="readyState",k="addEventListener",v=function(){return Array.every||function(f,w){for(var s=0,l=f.length;s<l;++s){if(!w(f[s],s,f)){return 0}}return 1}}(),c=function(f,l){v(f,function(w,s){return !l(w,s,f)})};if(!u[a]&&u[k]){u[k](h,function e(){u.removeEventListener(h,e,p);u[a]="complete"},p);u[a]="loading"}(function o(){g=m.test(u[a])?!c(i,function(l){g=1;l()}):!setTimeout(o,50)}());d.$script=function(y,l,x){var w=typeof l==j,s=w?x:l,y=typeof y==j?[y]:y,A=w?l:y.join(""),f=y.length,z=function(){if(!--f){q[A]=1;s&&s();for(var B in t){v(B.split("|"),function(C){return(q[C])})&&!c(t[B],function(C){C()})&&(t[B]=[])}}};if(n[A]){return}setTimeout(function(){c(y,function(D){if(b[D]){return}b[D]=n[A]=1;var C=u.createElement("script"),B=0;C.onload=C.onreadystatechange=function(){if((C[a]&&!(m.test(C[a])))||B){return}C.onload=C.onreadystatechange=null;B=1;z()};C.async=1;C.src=D;r.parentNode.insertBefore(C,r)})},0);return $script};$script.ready=function(w,l,s){w=(typeof w==j)?[w]:w;var f=[];!c(w,function(x){(q[x])||f.push(x)})&&v(w,function(x){return(q[x])})?l():(function(x){t[x]=t[x]||[];t[x].push(l);s&&s(f)}(w.join("|")));return $script};$script.domReady=function(f){g?f():i.push(f)}}(window,document));
+		$script('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', 'jquery');
+		$script('//static.getclicky.com/js', function() {
+			try{ clicky.init(195891); }catch(err){}
+		});
+		$script.ready(['jquery'], function(){
+			$script('https://media.artgallery.nsw.gov.au/chrome/scripts/jquery.slideto.min.js', 'slideto');
+			$script('//code.jquery.com/ui/1.9.2/jquery-ui.min.js', 'jqueryui');
+			$script('https://media.artgallery.nsw.gov.au/chrome/fancybox/jquery.fancybox.pack.js?v=2.1.4', 'fancybox');
+
+			$script.ready(['fancybox'], function() {
+				$script('https://media.artgallery.nsw.gov.au/chrome/fancybox/jquery.fancybox-buttons.js?v=1.0.5', 'buttons');
+			});
+		});
+	//]]></script><script type="text/javascript" src="https://media.artgallery.nsw.gov.au/CACHE/js/66e59c541e92.js"></script><script type="text/javascript">
+  window.artsets = window.artsets || {};
+  artsets.common_scripts = [];
+  
+    artsets.common_scripts.push('//media.artgallery.nsw.gov.au/static/gen/artsets_common.803922ae.js');
+    
+  
+  
+  artsets.global_scripts = [];
+  
+    artsets.global_scripts.push('//media.artgallery.nsw.gov.au/static/gen/artsets_global.2762555e.js');
+  
+  
+  artsets.load_scripts = function(scripts) {
+    // loads a list of scripts relative to the artsets directory
+    for (var i = 0; i < scripts.length; i++) {
+      $script(scripts[i], scripts[i]);
+    }
+  };
+</script><script src="//media.artgallery.nsw.gov.au/static/gen/artsets_global_stub.f1a9a919.js" type="text/javascript"></script></head><body>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P934F8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P934F8');</script>
+
+
+<div id="container" class="collection"><p class="offScreen"><a href="#content">Skip to content</a></p><div id="header"><p id="device-warning"><a href="https://m.artgallery.nsw.gov.au/collection/works/"><strong>For a better experience, switch to </strong><span class="button">Mobile Version &raquo;</span></a></p><div id="logo"><a href="/"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/agnsw_94x94_black.svg" width="94" height="94" alt="agnsw" class="svg agnsw " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/agnsw_94x94_black.png" width="94" height="94" alt="agnsw" class="png agnsw " /><![endif]--></a></div><div id="primary-nav"><ul><li><a href="/visit-us/">Visit us</a></li><li><a href="/about-us/">About us</a></li><li><a href="/members/">Members</a></li><li><a href="/whats-on/">What’s on</a></li><li><a href="/education/">Education</a></li><li><a href="/media-office/">Media office</a></li><li><a href="/discover-art/">Discover art</a></li><li><a href="/research/">Research</a></li><li><a href="/channel/">Gallery channel</a></li><li class="active"><a href="/collection/">Collection</a></li><li><a href="/support-us/">Support us</a></li><li><a href="/shop/">Shop</a></li></ul><div class="artsets-header-nav"><a href="/artsets/" class="main">Art Sets</a><div class="user"
+					     data-load_url="/artsets/_header-nav"></div></div></div><div id="search"><form action="/search/" method="get"><label for="keywords" class="offScreen">Search</label><input type="text" class="text-input" id="keywords" name="q" value="Search" /><input type="submit" class="button" value="Go" /></form></div></div>
+		
+	<h1><a href="/collection/">Collection</a></h1>		
+	
+
+		<div id="subnav">
+
+<div class="searchTitles">
+	<div class="searchTitle searchTitleTop">Your search results for:</div>
+	<div class="searchTitle searchTitlePad">Refine your search by:</div>
+	
+	<div id="secondary-nav"> 
+		<ul class="searchList"> 
+			
+				<li>
+					<a href="?filter_by=area" rel="nofollow">Collection area</a>
+				</li>
+			
+			
+				<li>
+					<a href="?filter_by=origin_id" rel="nofollow">Origin</a>
+				</li>
+			
+			
+				<li>
+					<a href="?filter_by=media" rel="nofollow">Media</a>
+				</li>
+			
+			
+				<li>
+					<a href="?filter_by=date" rel="nofollow">Date/period</a>
+				</li>
+			
+			
+				<li>
+					<a href="?filter_by=artist_id" rel="nofollow">Artist A&ndash;Z</a>
+				</li>
+			
+		</ul>
+		
+    <script type="text/javascript">
+        $script.ready(['jquery','jqueryui'], function(){
+            var lastTerm = '';
+            $("#work-finder").autocomplete({
+                source: "https://www.artgallery.nsw.gov.au/collection/api/autocomplete/",
+                minLength: 2,
+                select: function(event, ui) {
+                    console.log(ui);
+                },
+                close: function(event, ui) {
+                    $('#work-finder').val('');
+                },
+                source: function(request, response){
+                    var term = $.trim(request.term);
+                    var query = $.param({term: term});
+                    if (term != lastTerm){
+                        $.get("https://www.artgallery.nsw.gov.au/collection/api/autocomplete/?" + query, function(data) {
+                            response(data);
+                            lastQuery = term;
+                        });            
+                    }
+                }
+            })
+        });
+    </script> 
+    <div class="searchTitle">Search the collection:</div> 
+	<form action="/collection/works/">
+		<div class="searchBox">
+			<input type="text" name="q" id="id_q" value="" title="Enter search terms" /> 
+			<input type="image" value="" src="/media/chrome/images/template/buttons/search-triangle.gif" class="button" alt="search collection" />
+		</div>
+	</form>
+<div class="searchTitle"><a href="/collection/advanced-search/">Advanced search</a></div> 
+<div class="searchTitle"><a href="/collection/works/">All works</a></div> 
+<div class="searchTitle"><a href="/collection/works/?on_display=y">Works on display</a></div> 
+
+	</div>
+
+</div>
+</div>
+
+		<div id="content">
+			
+	
+	
+    
+    
+	
+
+<div class="searchBlock">
+    <p>
+    	<strong>
+    	    
+    	        
+    	            Works
+    	        
+    	        from the entire collection<br/>
+    	    
+    	    sorted by artist surname<br/>
+        </strong>
+        
+            
+        		viewing all 32567 results
+        		
+                    (view <a href="?on_display=y">973
+                     on display at the Gallery</a>,
+                
+                view <a href="?images=y">21755 with images</a> available)
+            
+        
+    </p>
+    <form>Sorted by
+        <select class="nav-select">
+            <option value="?sort_by=artist" selected="selected">artist surname</option>
+            <option value="?sort_by=date">oldest first (excludes undated works)</option>
+            <option value="?sort_by=-date">newest first (excludes undated works)</option>
+            <option value="?sort_by=title">title</option>
+            <option value="?sort_by=has_images">image availability</option>
+            <option value="?sort_by=accession">accession number</option>
+            
+        </select>
+    </form>
+</div>
+
+	<div class="clearfix"></div> 
+	<div class="paginationBox"> 
+		
+  
+  
+    <div class="paginationArrows">
+        
+        
+        <div class="paginationRight"> 
+            <a href="?page=2"><img src="https://media.artgallery.nsw.gov.au/chrome/images/template/pagination-right.gif" width="13" height="13" alt="" /></a> 
+        </div> 
+        
+    </div>
+    
+    
+    <ul class="pagination">
+        
+            
+              <li><a href="?page=1" class=" active">1</a></li> 
+            
+          
+            
+              <li><a href="?page=2" class=" ">2</a></li> 
+            
+          
+            
+              <li><a href="?page=3" class=" ">3</a></li> 
+            
+          
+            
+              <li><a href="?page=4" class=" ">4</a></li> 
+            
+          
+            
+              <li><a href="?page=5" class=" ">5</a></li> 
+            
+          
+            
+              <li>...</li> 
+            
+          
+            
+              <li><a href="?page=539" class=" ">539</a></li> 
+            
+          
+            
+              <li><a href="?page=540" class=" ">540</a></li> 
+            
+          
+            
+              <li><a href="?page=541" class=" ">541</a></li> 
+            
+          
+            
+              <li><a href="?page=542" class=" ">542</a></li> 
+            
+          
+            
+              <li><a href="?page=543" class="noBorder ">543</a></li> 
+            
+          
+    </ul>
+
+		<div class="clearfix"></div>
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/168.1981/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Anita Aarons</span>
+    		<span class="title">Year of the Moon (1969)</span>
+    		<span class="meta">168.1981</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/477.1979/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Abaninofi, Kainantu District, Eastern Highlands Province, Papua New Guinea</span>
+    		<span class="title">Shield (early 20th century, collected circa 1972)</span>
+    		<span class="meta">477.1979</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/20.1977/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/20.1977%23%23S.jpg.98x165_q85.jpg" width="98" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">C Yarnall Abbott</span>
+    		<span class="title">Illustration for &#39;Trelawney&#39; (circa 1900)</span>
+    		<span class="meta">20.1977</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/218/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Harold Abbott</span>
+    		<span class="title">recto: Old Italian verso: (seated female nude) (circa 1934)</span>
+    		<span class="meta">218</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/18.1999/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Harold Abbott</span>
+    		<span class="title">David (1950)</span>
+    		<span class="meta">18.1999</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/206.1976/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Harold Abbott</span>
+    		<span class="title">Miss Jeanie Ranken (1937)</span>
+    		<span class="meta">206.1976</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/OB1.1959/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/Alpha/OB1.1959%23%23S.jpg.132x165_q85.jpg" width="132" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Lemuel Francis Abbott</span>
+    		<span class="title">Warren Hastings (circa 1795)</span>
+    		<span class="meta">OB1.1959</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/53.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/53.2014%23%23S.jpg.132x165_q85.jpg" width="132" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">(Studies of sleeping dog)</span>
+    		<span class="meta">53.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/49.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/4/49.2014%23%23S.jpg.121x165_q85.jpg" width="121" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">Florence sleeping (1938)</span>
+    		<span class="meta">49.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/50.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/50.2014%23%23S.jpg.93x165_q85.jpg" width="93" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">Two figures (1945)</span>
+    		<span class="meta">50.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/52.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/52.2014%23%23S.jpg.185x146_q85.jpg" width="185" height="146" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">(Two life studies: head of man in hat ... (circa 1940)</span>
+    		<span class="meta">52.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/51.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/51.2014%23%23S.jpg.115x165_q85.jpg" width="115" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">Frank White (1946)</span>
+    		<span class="meta">51.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/54.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/54.2014%23%23S.jpg.119x165_q85.jpg" width="119" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">Grantley (head studies) (circa 1948-circa 1950)</span>
+    		<span class="meta">54.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/55.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/55.2014%23%23S.jpg.109x165_q85.jpg" width="109" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">(Portrait of Christine) (1955)</span>
+    		<span class="meta">55.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/56.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/56.2014%23%23S.jpg.116x165_q85.jpg" width="116" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">Girl from Miller&#39;s Point (1943)</span>
+    		<span class="meta">56.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/57.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/57.2014%23%23S.jpg.185x162_q85.jpg" width="185" height="162" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">Head study (man in hat) (1940)</span>
+    		<span class="meta">57.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/58.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/58.2014%23%23S.jpg.145x165_q85.jpg" width="145" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">Portrait study (Henry Gibbons) (1949?)</span>
+    		<span class="meta">58.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/59.2014/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/5/59.2014%23%23S.jpg.116x165_q85.jpg" width="116" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Mary Abbott</span>
+    		<span class="title">(Album page with 8 sheets affixed, animal studies) (1946)</span>
+    		<span class="meta">59.2014</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/219.1996/" class="highlight">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/219.1996%23%23S.jpg.185x124_q85.jpg" width="185" height="124" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Ian Abdulla</span>
+    		<span class="title">Swimming before school (1995)</span>
+    		<span class="meta">219.1996 | Collection highlight</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/16.2015/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/1/16.2015%23%23S.jpg.185x148_q85.jpg" width="185" height="148" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Ian Abdulla</span>
+    		<span class="title">Pelicans at Katarapko (1994)</span>
+    		<span class="meta">16.2015</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/165.1976/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Abelam people</span>
+    		<span class="title">Figure (Nggwalndu) (mid 20th century, collected 1961)</span>
+    		<span class="meta">165.1976</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/IA5.1963/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/Alpha/IA5.1963%23%23S.jpg.72x165_q85.jpg" width="72" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Abelam people</span>
+    		<span class="title">Bai (panel from a ceremonial house) (mid 20th century)</span>
+    		<span class="meta">IA5.1963</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/IA3.1965/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/Alpha/IA3.1965%23%23S.jpg.121x165_q85.jpg" width="121" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Abelam people</span>
+    		<span class="title">Baba tagwa mask (mid 20th century)</span>
+    		<span class="meta">IA3.1965</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/IA9.1965/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/Alpha/IA9.1965%23%23S.jpg.58x165_q85.jpg" width="58" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Abelam people</span>
+    		<span class="title">Carved figure</span>
+    		<span class="meta">IA9.1965</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/396.1994/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/3/396.1994%23%23S.jpg.67x165_q85.jpg" width="67" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Abelam people</span>
+    		<span class="title">urungwall (sacred figure) (early 1900-mid 20th century)</span>
+    		<span class="meta">396.1994</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/214.2016/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Abelam people</span>
+    		<span class="title">Wut (looped string bag) (circa 1960s)</span>
+    		<span class="meta">214.2016</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/DO5.1967/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Abe Nobuya</span>
+    		<span class="title">Work (circa 1964)</span>
+    		<span class="meta">DO5.1967</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/265.2012/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/265.2012%23%23S.jpg.185x145_q85.jpg" width="185" height="145" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">The Egg, Albany, New York, 7 September 2010 (2010)</span>
+    		<span class="meta">265.2012</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/266.2012/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/266.2012%23%23S.jpg.131x165_q85.jpg" width="131" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">Conical monopole, Scott Base, Ross Island, Antarctica, 3 ... (2010)</span>
+    		<span class="meta">266.2012</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/252.2016/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/252.2016%23%23S.jpg.185x158_q85.jpg" width="185" height="158" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">&quot;Te Waiherehere&quot;, Koroniti, Wanganui River, 29 May 1986 (1986, printed 1997)</span>
+    		<span class="meta">252.2016</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/321.2016/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">A distant view of Taranaki from the mouth ... (1986)</span>
+    		<span class="meta">321.2016</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/441.2016/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">Taranaki (with cloud), Wanganui, 1986 (1986)</span>
+    		<span class="meta">441.2016</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/442.2016/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">Taranaki, Wanganui, 1986 (1986)</span>
+    		<span class="meta">442.2016</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/443.2016/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">Taranaki, Wanganui, (no date) 1986 (1986)</span>
+    		<span class="meta">443.2016</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/112.2002/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/1/112.2002%23%23S.jpg.185x148_q85.jpg" width="185" height="148" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">Taranaki from Oeo Road, under Moonlight, 27-28 September ... (1999, printed 2000)</span>
+    		<span class="meta">112.2002</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/111.2002/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/1/111.2002%23%23S.jpg.185x146_q85.jpg" width="185" height="146" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">Taranaki (The Heavens Declare the Glory of God), ... (1986, printed 1987)</span>
+    		<span class="meta">111.2002</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/362.2003/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/3/362.2003%23%23S.jpg.185x149_q85.jpg" width="185" height="149" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">Last Light with Moon, Napier, 14 May 2003 (2003)</span>
+    		<span class="meta">362.2003</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/363.2003/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/3/363.2003%23%23S.jpg.185x146_q85.jpg" width="185" height="146" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Laurence Aberhart</span>
+    		<span class="title">Last Light, St Andrews, South Canterbury, 14 February ... (1999, printed 2003)</span>
+    		<span class="meta">363.2003</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/WA8.1963/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/Alpha/WA8.1963%23%23S.jpg.185x132_q85.jpg" width="185" height="132" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Uldis Abolins</span>
+    		<span class="title">Red Earth (1963)</span>
+    		<span class="meta">WA8.1963</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/249.1979/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/249.1979%23%23S.jpg.185x137_q85.jpg" width="185" height="137" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Schelte a Bolswert<br />after Sir Peter Paul Rubens</span>
+    		<span class="title">Landscape (1640-1645)</span>
+    		<span class="meta">249.1979</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/250.1979/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/250.1979%23%23S.jpg.110x165_q85.jpg" width="110" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Schelte a Bolswert<br />after Sir Anthony van Dyck</span>
+    		<span class="title">Justus Lipsius Historiographus (17th century)</span>
+    		<span class="meta">250.1979</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/129.1981/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/1/129.1981%23%23S.jpg.185x122_q85.jpg" width="185" height="122" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Louis Abrahams<br />after John Mather</span>
+    		<span class="title">Landscape (1886)</span>
+    		<span class="meta">129.1981</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/153.1977/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Aurel Abramovici</span>
+    		<span class="title">Sie schaut zu (1933)</span>
+    		<span class="meta">153.1977</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/154.1977/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Aurel Abramovici</span>
+    		<span class="title">Die springer (circa 1930s)</span>
+    		<span class="meta">154.1977</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/335.2011/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Aurel Abramovici</span>
+    		<span class="title">untitled (sailboats in a harbour) (1930s)</span>
+    		<span class="meta">335.2011</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/336.2011/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Aurel Abramovici</span>
+    		<span class="title">untitled (winter scene in a village) (1931)</span>
+    		<span class="meta">336.2011</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/211.1981.4.a-p/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/211.1981.4.a-p%23a%23S.jpg.185x128_q85.jpg" width="185" height="128" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Marina Abramovic<br />Ulay</span>
+    		<span class="title">Gold found by the artists (1981)</span>
+    		<span class="meta">211.1981.4.a-p</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/211.1981.5.a-p/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/211.1981.5.a-p%23a%23S.jpg.185x125_q85.jpg" width="185" height="125" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Marina Abramovic<br />Ulay</span>
+    		<span class="title">Gold found by the artists (1981)</span>
+    		<span class="meta">211.1981.5.a-p</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/211.1981.6.a-b/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/211.1981.6.a-b%23a%23S.jpg.185x145_q85.jpg" width="185" height="145" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Marina Abramovic<br />Ulay</span>
+    		<span class="title">Gold found by the artists (1981)</span>
+    		<span class="meta">211.1981.6.a-b</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/211.1981.2/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/211.1981.2%23%23S.jpg.165x165_q85.jpg" width="165" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Marina Abramovic<br />Ulay</span>
+    		<span class="title">Gold found by the artists (1981)</span>
+    		<span class="meta">211.1981.2</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/211.1981.3/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/211.1981.3%23%23S.jpg.165x165_q85.jpg" width="165" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Marina Abramovic<br />Ulay</span>
+    		<span class="title">Gold found by the artists (1981)</span>
+    		<span class="meta">211.1981.3</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/211.1981.1/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/211.1981.1%23%23S.jpg.112x165_q85.jpg" width="112" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Marina Abramovic<br />Ulay</span>
+    		<span class="title">Gold found by the artists (1981)</span>
+    		<span class="meta">211.1981.1</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/345.2001/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Marina Abramovic<br />Ulay</span>
+    		<span class="title">Collected works, 1975-1986 I. A performance anthology 1975-1980 ... (1975-1986)</span>
+    		<span class="meta">345.2001</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/8657/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/8/8657%23%23S.jpg.185x109_q85.jpg" width="185" height="109" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">John Absolon</span>
+    		<span class="title">The haymakers (1850s)</span>
+    		<span class="meta">8657</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/293.2007/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/293.2007%23detail01%23S.jpg.185x138_q85.jpg" width="185" height="138" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Aceh, Indonesia</span>
+    		<span class="title">Head cloth with stylised Islamic calligraphy design (early 20th century)</span>
+    		<span class="meta">293.2007</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/287.1990/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/287.1990%23%23S.jpg.185x142_q85.jpg" width="185" height="142" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Jean-Alexis Achard</span>
+    		<span class="title">Clump of trees (1850)</span>
+    		<span class="meta">287.1990</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/288.1990/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Jean-Alexis Achard</span>
+    		<span class="title">Trees at the edge of a pond (1864)</span>
+    		<span class="meta">288.1990</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/3315/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Maurice-Victor Achener</span>
+    		<span class="title">Pont de la Tournelle (1918)</span>
+    		<span class="meta">3315</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/257.2010/">
+	    <span class="thumbnail">
+		
+			<img src="/media/chrome/images/template/search-results/NIA_185x165.png" width="185" height="165" alt="" />
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Hira Achu</span>
+    		<span class="title">Mirror work &#39;choli&#39; (blouse) (20th century)</span>
+    		<span class="meta">257.2010</span>
+		</span>
+	</a>
+</div>
+
+            
+                
+
+<div class="result"> 
+	<a href="/collection/works/208.2002/">
+	    <span class="thumbnail">
+		
+		    
+			
+
+<img src="/media/thumbnails/collection_images/2/208.2002%23%23S.jpg.59x165_q85.jpg" width="59" height="165" alt="" />
+
+			
+		
+		</span>
+		<span class="result-txt">
+    		<span class="artist">Roger Ackling</span>
+    		<span class="title">Weybourne (1994)</span>
+    		<span class="meta">208.2002</span>
+		</span>
+	</a>
+</div>
+
+            
+		<div class="clearfix"></div>
+		
+  
+  
+    <div class="paginationArrows">
+        
+        
+        <div class="paginationRight"> 
+            <a href="?page=2"><img src="https://media.artgallery.nsw.gov.au/chrome/images/template/pagination-right.gif" width="13" height="13" alt="" /></a> 
+        </div> 
+        
+    </div>
+    
+    
+    <ul class="pagination">
+        
+            
+              <li><a href="?page=1" class=" active">1</a></li> 
+            
+          
+            
+              <li><a href="?page=2" class=" ">2</a></li> 
+            
+          
+            
+              <li><a href="?page=3" class=" ">3</a></li> 
+            
+          
+            
+              <li><a href="?page=4" class=" ">4</a></li> 
+            
+          
+            
+              <li><a href="?page=5" class=" ">5</a></li> 
+            
+          
+            
+              <li>...</li> 
+            
+          
+            
+              <li><a href="?page=539" class=" ">539</a></li> 
+            
+          
+            
+              <li><a href="?page=540" class=" ">540</a></li> 
+            
+          
+            
+              <li><a href="?page=541" class=" ">541</a></li> 
+            
+          
+            
+              <li><a href="?page=542" class=" ">542</a></li> 
+            
+          
+            
+              <li><a href="?page=543" class="noBorder ">543</a></li> 
+            
+          
+    </ul>
+
+	</div>
+
+
+		</div>
+		
+
+<footer class="vcard"><h3 class="fn org">Art Gallery of New South Wales</h3><nav id="basic"><div id="address"><p><span class="adr">Art Gallery Rd, The Domain 2000<br />Sydney, Australia</span><br />Info line <span class="tel">1800 679 278</span><span class="geo"><span class="latitude"><span class="value-title" title="-33.868589"></span></span><span class="longitude"><span class="value-title" title="151.216958"></span></span></span></p></div><div id="social"><h4>Follow</h4><ul><li><a href="/twitter/" class="twitter" title="AGNSW on Twitter"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/twitter_20x20_black.svg" width="20" height="20" alt="twitter" class="svg twitter " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/twitter_20x20_black.png" width="20" height="20" alt="twitter" class="png twitter " /><![endif]--></a></li><li><a href="/facebook/" class="facebook" title="AGNSW on Facebook"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/facebook_20x20_black.svg" width="20" height="20" alt="facebook" class="svg facebook " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/facebook_20x20_black.png" width="20" height="20" alt="facebook" class="png facebook " /><![endif]--></a></li><li><a href="/instagram/" class="instagram" title="AGNSW on Instagram"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/instagram_20x20_black.svg" width="20" height="20" alt="instagram" class="svg instagram " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/instagram_20x20_black.png" width="20" height="20" alt="instagram" class="png instagram " /><![endif]--></a></li><li><a href="/youtube/" class="youtube" title="AGNSW on YouTube"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/youtube_20x20_black.svg" width="20" height="20" alt="youtube" class="svg youtube " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/youtube_20x20_black.png" width="20" height="20" alt="youtube" class="png youtube " /><![endif]--></a></li></ul></div><div id="hours"><h4>Open daily</h4><p><a href="/visit-us/plan-your-visit/opening-hours/">See opening hours and admission</a><br />
+                        Closed Good Friday &amp; Christmas Day
+                    </p></div></nav><nav id="extras"><div id="alternatives"><h4>Visitor information</h4><ul><li><a href="/visit-us/information-in-other-languages/">Deutsch</a></li><li><a href="/visit-us/information-in-other-languages/">Français</a></li><li><a href="/visit-us/information-in-other-languages/">日本語</a></li><li><a href="/visit-us/information-in-other-languages/">中文</a></li><li><a href="/visit-us/information-in-other-languages/">Español</a></li><li><a href="/visit-us/information-in-other-languages/">Italiano</a></li><li><a href="/visit-us/information-in-other-languages/">한국어</a></li><li><a href="/visit-us/information-in-other-languages/">العربية</a></li></ul><p id="access"><a href="/visit-us/access/"><img src="https://media.artgallery.nsw.gov.au/chrome/images/access.png" height="30" alt="" /></a></p><p id="wifi"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/wifi_26x26_black.svg" width="26" height="26" alt="wifi" class="svg wifi " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/wifi_26x26_black.png" width="26" height="26" alt="wifi" class="png wifi " /><![endif]--> WiFi available<br />throughout the Gallery</p><p id="mobile"><a href="https://m.artgallery.nsw.gov.au/collection/works/"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/mobile_26x26_black.svg" width="26" height="26" alt="mobile" class="svg mobile " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/mobile_26x26_black.png" width="26" height="26" alt="mobile" class="png mobile " /><![endif]--> Mobile version</a></p></div><div id="quicklinks"><h4>Quick links</h4><ul class="shortcuts"><li><a href="/about-us/contact-the-gallery/">Contact us</a></li><li><a href="/about-us/keep-me-updated/">Keep me updated</a></li><li><a href="/visit-us/plan-your-visit/getting-here/">Getting here</a></li><li><a href="/venues/">Floorplan</a></li><li><a href="/art-after-hours/">Art After Hours</a></li></ul><ul class="shortcuts"><li><a href="/blog/">Blog</a></li><li><a href="/prizes/">Prizes</a></li><li><a href="/insideartexpress/">Inside ARTEXPRESS</a></li><li><a href="http://www.google.com/culturalinstitute/collection/art-gallery-of-new-south-wales">Google Art Project</a></li><li><a href="/sydney-modern-project/">Sydney Modern Project</a></li></ul></div></nav><nav id="legal"><ul><li><a href="/about-us/about-website/website-accessibility/">Accessibility</a></li><li><a href="/about-us/about-website/disclaimer/">Disclaimer</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/about-us/about-website/links-policy/">Links policy</a></li><li><a href="http://nsw.gov.au/">NSW Government</a></li><li><a href="/about-us/about-website/copyright-policy/">Copyright policy</a></li><li class="last"><a href="/about-us/contact-the-gallery/website-feedback/?referrer=https://www.artgallery.nsw.gov.au/collection/works/">Feedback</a></li></ul></nav></footer></div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"4f4dd4a777","agent":"","transactionName":"Z1cHZUZTWktZVUVYDl4dI0RaUUBRV1geQhBcUQpdWFdXTFFZXx8XWVcSQg5RW1RUU1JFCF9cOkJRU0ZbUA==","applicationID":"598312","errorBeacon":"bam.nr-data.net","applicationTime":2814}</script>
+
+</body>
+</html>
