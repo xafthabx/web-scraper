@@ -24,3 +24,22 @@ work = "{0}, {1}, {2}".format (artist_name, piece_title, piece_ref)
 all_works.append(work)
 
 print all_works
+
+
+
+
+# for detail in response.xpath("//div[@class='detail-all-text']/b"):
+#     name = detail.xpath("text()").extract()[0]
+#     value = detail.xpath("following-sibling::text()")[0]
+
+#     print name, value
+
+
+for detail in page.xpath("//div[@class='result']/b"):
+    name = detail.xpath("text()").extract()[0]
+    value = detail.xpath("following-sibling::text()")[0]
+
+    print name, value
+
+for element in soup.find_all(text=re.compile("artist")):
+    print(element.get_text())
