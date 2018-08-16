@@ -1,32 +1,25 @@
-artist name, title, country, ref, url
-"Salvatore Zofrea","The death of my grandfather (1994-1999)","Australia", 68.2000.26, https://www.artgallery.nsw.gov.au/collection/works/68.2000.26/
-"Salvatore Zofrea","Christmas Eve - shepherds with pipes (1994-1999)","Australia", 68.2000.30, https://www.artgallery.nsw.gov.au/collection/works/68.2000.30/
-"Salvatore Zofrea","Harvesting olives (1994-1999)","Australia", 68.2000.27, https://www.artgallery.nsw.gov.au/collection/works/68.2000.27/
-"Salvatore Zofrea","Crushing olive oil (1994-1999)","Australia", 68.2000.28, https://www.artgallery.nsw.gov.au/collection/works/68.2000.28/
-"Salvatore Zofrea","Collecting firewood at Christmas (1994-1999)","Australia", 68.2000.29, https://www.artgallery.nsw.gov.au/collection/works/68.2000.29/
-"Salvatore Zofrea","Christmas presents from America (1994-1999)","Australia", 68.2000.31, https://www.artgallery.nsw.gov.au/collection/works/68.2000.31/
-"Salvatore Zofrea","Killing the pig for salami (1994-1999)","Australia", 68.2000.32, https://www.artgallery.nsw.gov.au/collection/works/68.2000.32/
-"Salvatore Zofrea","The beginning of Lent (1994-1999)","Australia", 68.2000.33, https://www.artgallery.nsw.gov.au/collection/works/68.2000.33/
-"Salvatore Zofrea","The last supper at my mother's house (1994-1999)","Australia", 68.2000.34, https://www.artgallery.nsw.gov.au/collection/works/68.2000.34/
-"Salvatore Zofrea","Holy Week (1994-1999)","Australia", 68.2000.35, https://www.artgallery.nsw.gov.au/collection/works/68.2000.35/
-"Salvatore Zofrea","Easter Sunday - the Resurrection (1994-1999)","Australia", 68.2000.36, https://www.artgallery.nsw.gov.au/collection/works/68.2000.36/
-"Salvatore Zofrea","Easter Monday - the picnic at my grandfather's ... (1994-1999)","Australia", 68.2000.37, https://www.artgallery.nsw.gov.au/collection/works/68.2000.37/
-"Salvatore Zofrea","St Gregorio's fair (1994-1999)","Australia", 68.2000.38, https://www.artgallery.nsw.gov.au/collection/works/68.2000.38/
-"Salvatore Zofrea","The circus in Borgia (1994-1999)","Australia", 68.2000.39, https://www.artgallery.nsw.gov.au/collection/works/68.2000.39/
-"Salvatore Zofrea","Children's games (1994-1999)","Australia", 68.2000.40, https://www.artgallery.nsw.gov.au/collection/works/68.2000.40/
-"Gaetano Zompiniafter Giovanni Benedetto Castiglione","Caprices and landscapes (1758-1759)","Italy", DO22.1965.a-m, https://www.artgallery.nsw.gov.au/collection/works/DO22.1965.a-m/
-"Anders Leonard Zorn","Wet (1911)","Sweden", 450, https://www.artgallery.nsw.gov.au/collection/works/450/
-"Anders Leonard Zorn","Gulli II (1918)","Sweden", 451, https://www.artgallery.nsw.gov.au/collection/works/451/
-"Anders Leonard Zorn","The fisherman, St Ives, Cornwall (1891)","Sweden", 452, https://www.artgallery.nsw.gov.au/collection/works/452/
-"Anders Leonard Zorn","Portrait of Ernest Renan (1892)","Sweden", 453, https://www.artgallery.nsw.gov.au/collection/works/453/
-"Anders Leonard Zorn","Dal River (1919)","Sweden", 6861, https://www.artgallery.nsw.gov.au/collection/works/6861/
-"Anders Leonard Zorn","Mrs. Potter Palmer (1896)","Sweden", 6779, https://www.artgallery.nsw.gov.au/collection/works/6779/
-"Anders Leonard Zorn","Frida (1914)","Sweden", 178.1994, https://www.artgallery.nsw.gov.au/collection/works/178.1994/
-"Francesco Zuccarelli","Landscape","Italy", 8487, https://www.artgallery.nsw.gov.au/collection/works/8487/
-"Taddeo Zuccaro","Coronation of Paul III (circa 1563)","Italy", 479, https://www.artgallery.nsw.gov.au/collection/works/479/
-"Zumin, Markham Valley, Morobe Province, Papua New Guinea","Pot","NOT FOUND", 484.1979, https://www.artgallery.nsw.gov.au/collection/works/484.1979/
-"Zumin, Markham Valley, Morobe Province, Papua New Guinea","Cooking pot (mid 20th century)","NOT FOUND", 468.1979, https://www.artgallery.nsw.gov.au/collection/works/468.1979/
-"Zumin, Markham Valley, Morobe Province, Papua New Guinea","Pot (mid 20th century, collected 1968)","NOT FOUND", 469.1979, https://www.artgallery.nsw.gov.au/collection/works/469.1979/
-"Zumin, Markham Valley, Morobe Province, Papua New Guinea","Double cup (collected 1968)","NOT FOUND", 571.1979, https://www.artgallery.nsw.gov.au/collection/works/571.1979/
-"Zumin, Markham Valley, Morobe Province, Papua New Guinea","Pot support (collected 1968)","NOT FOUND", 842.1979.3, https://www.artgallery.nsw.gov.au/collection/works/842.1979.3/
-"Zumin, Markham Valley, Morobe Province, Papua New Guinea","Pot support (collected 1968)","NOT FOUND", 842.1979.2, https://www.artgallery.nsw.gov.au/collection/works/842.1979.2/
+artist name,title,country,year,ref,url
+"Salvatore Zofrea","The death of my grandfather (1994-1999)","Australia","1994-1999",68.2000.26, https://www.artgallery.nsw.gov.au/collection/works/68.2000.26/
+"Salvatore Zofrea","Christmas Eve - shepherds with pipes (1994-1999)","Australia","1994-1999",68.2000.30, https://www.artgallery.nsw.gov.au/collection/works/68.2000.30/
+"Salvatore Zofrea","Harvesting olives (1994-1999)","Australia","1994-1999",68.2000.27, https://www.artgallery.nsw.gov.au/collection/works/68.2000.27/
+"Salvatore Zofrea","Crushing olive oil (1994-1999)","Australia","1994-1999",68.2000.28, https://www.artgallery.nsw.gov.au/collection/works/68.2000.28/
+"Salvatore Zofrea","Collecting firewood at Christmas (1994-1999)","Australia","1994-1999",68.2000.29, https://www.artgallery.nsw.gov.au/collection/works/68.2000.29/
+"Salvatore Zofrea","Christmas presents from America (1994-1999)","Australia","1994-1999",68.2000.31, https://www.artgallery.nsw.gov.au/collection/works/68.2000.31/
+"Salvatore Zofrea","Killing the pig for salami (1994-1999)","Australia","1994-1999",68.2000.32, https://www.artgallery.nsw.gov.au/collection/works/68.2000.32/
+"Salvatore Zofrea","The beginning of Lent (1994-1999)","Australia","1994-1999",68.2000.33, https://www.artgallery.nsw.gov.au/collection/works/68.2000.33/
+"Salvatore Zofrea","The last supper at my mother's house (1994-1999)","Australia","1994-1999",68.2000.34, https://www.artgallery.nsw.gov.au/collection/works/68.2000.34/
+"Salvatore Zofrea","Holy Week (1994-1999)","Australia","1994-1999",68.2000.35, https://www.artgallery.nsw.gov.au/collection/works/68.2000.35/
+"Salvatore Zofrea","Easter Sunday - the Resurrection (1994-1999)","Australia","1994-1999",68.2000.36, https://www.artgallery.nsw.gov.au/collection/works/68.2000.36/
+"Salvatore Zofrea","Easter Monday - the picnic at my grandfather's ... (1994-1999)","Australia","1994-1999",68.2000.37, https://www.artgallery.nsw.gov.au/collection/works/68.2000.37/
+"Salvatore Zofrea","St Gregorio's fair (1994-1999)","Australia","1994-1999",68.2000.38, https://www.artgallery.nsw.gov.au/collection/works/68.2000.38/
+"Salvatore Zofrea","The circus in Borgia (1994-1999)","Australia","1994-1999",68.2000.39, https://www.artgallery.nsw.gov.au/collection/works/68.2000.39/
+"Salvatore Zofrea","Children's games (1994-1999)","Australia","1994-1999",68.2000.40, https://www.artgallery.nsw.gov.au/collection/works/68.2000.40/
+"Gaetano Zompiniafter Giovanni Benedetto Castiglione","Caprices and landscapes (1758-1759)","Italy","1758-1759",DO22.1965.a-m, https://www.artgallery.nsw.gov.au/collection/works/DO22.1965.a-m/
+"Anders Leonard Zorn","Wet (1911)","Sweden","1911",450, https://www.artgallery.nsw.gov.au/collection/works/450/
+"Anders Leonard Zorn","Gulli II (1918)","Sweden","1918",451, https://www.artgallery.nsw.gov.au/collection/works/451/
+"Anders Leonard Zorn","The fisherman, St Ives, Cornwall (1891)","Sweden","1891",452, https://www.artgallery.nsw.gov.au/collection/works/452/
+"Anders Leonard Zorn","Portrait of Ernest Renan (1892)","Sweden","1892",453, https://www.artgallery.nsw.gov.au/collection/works/453/
+"Anders Leonard Zorn","Dal River (1919)","Sweden","1919",6861, https://www.artgallery.nsw.gov.au/collection/works/6861/
+"Anders Leonard Zorn","Mrs. Potter Palmer (1896)","Sweden","1896",6779, https://www.artgallery.nsw.gov.au/collection/works/6779/
+"Anders Leonard Zorn","Frida (1914)","Sweden","1914",178.1994, https://www.artgallery.nsw.gov.au/collection/works/178.1994/
+"Francesco Zuccarelli","Landscape","Italy","NOT FOUND",8487, https://www.artgallery.nsw.gov.au/collection/works/8487/

@@ -16,7 +16,7 @@ page_2 = urllib2.urlopen(piece_url_2)
 soup_2 = BeautifulSoup(page_2, 'html.parser')
 
 work_detail = soup.find('div', attrs={'id': 'details'})
-location = re.sub ('\s+', ' ', work_detail.p.text.strip()))
+location = re.sub ('\s+', ' ', work_detail.p.text.strip())
 
 work_origin_raw = soup2.find('div', attrs={'class': 'artist'}).p.text.strip()
 work_origin = re.sub ('\s+', ' ', work_origin_raw)

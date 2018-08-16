@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 base_target_link = 'https://www.artgallery.nsw.gov.au/collection/works/?page='
 
 output_file = open('list-of-works.csv', 'w')
-print >> output_file, "artist name, title, country, ref, url"
+print >> output_file, "artist name,title,country,year,ref,url"
 
 for i in range(543):
     target_link = base_target_link + str(i)
@@ -39,7 +39,12 @@ for i in range(543):
             work_origin = re.sub ('\s+', ' ', work_origin_raw)
         except:
             work_origin = "NOT FOUND"
-        work = "\"{0}\",\"{1}\",\"{2}\", {3}, {4}".format(artist_name, piece_title, work_origin, piece_ref, piece_url)
+
+        try:
+            piece_year = soup2.find('article', attrs={'class': 'collection_work'}).find('div', attrs={'class': 'hero'}).find('div', attrs={'class': 'left'}).find('div').p.get_text(strip=True, separator=" ").strip()
+        except:
+            piece_year = "NOT FOUND"
+        work = "\"{0}\",\"{1}\",\"{2}\",\"{3}\",{4}, {5}".format(artist_name, piece_title, work_origin, piece_year, piece_ref, piece_url)
         all_works.append(work)
         print work
         print >> output_file, work
