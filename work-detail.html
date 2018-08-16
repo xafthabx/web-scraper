@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html><html><head><title>Shield, (early 20th century, collected circa 1972) :: The Collection :: Art Gallery NSW</title><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta http-equiv="content-type" content="text/html; charset=utf-8" /><meta name="viewport" content="width=1080" /><meta property="og:image" content="http://www.artgallery.nsw.gov.au/media/static-content/agnsw_facebook_logo_blue.png" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="/favicon.ico" /><link rel="stylesheet" href="https://media.artgallery.nsw.gov.au/CACHE/css/aad93227b302.css" type="text/css" /><link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" /><link rel="stylesheet" type="text/css" media="print" href="https://media.artgallery.nsw.gov.au/chrome/styles/print.css" /><link rel="stylesheet" type="text/css" href="//media.artgallery.nsw.gov.au/static/gen/artsets_global_desktop.9d1e2665.css"><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="https://media.artgallery.nsw.gov.au/chrome/styles/ie8.css" /><![endif]--><!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="https://media.artgallery.nsw.gov.au/chrome/styles/ie7.css" /><![endif]--><link rel="stylesheet" type="text/css" media="screen" href="//media.artgallery.nsw.gov.au/static/gen/collection.ed744500.css"><script type="text/javascript">
+	//<![CDATA[
+		(function(d,u){var r=u.getElementsByTagName("script")[0],q={},n={},t={},m=/loaded|complete/,b={},j="string",p=false,g=p,i=[],h="DOMContentLoaded",a="readyState",k="addEventListener",v=function(){return Array.every||function(f,w){for(var s=0,l=f.length;s<l;++s){if(!w(f[s],s,f)){return 0}}return 1}}(),c=function(f,l){v(f,function(w,s){return !l(w,s,f)})};if(!u[a]&&u[k]){u[k](h,function e(){u.removeEventListener(h,e,p);u[a]="complete"},p);u[a]="loading"}(function o(){g=m.test(u[a])?!c(i,function(l){g=1;l()}):!setTimeout(o,50)}());d.$script=function(y,l,x){var w=typeof l==j,s=w?x:l,y=typeof y==j?[y]:y,A=w?l:y.join(""),f=y.length,z=function(){if(!--f){q[A]=1;s&&s();for(var B in t){v(B.split("|"),function(C){return(q[C])})&&!c(t[B],function(C){C()})&&(t[B]=[])}}};if(n[A]){return}setTimeout(function(){c(y,function(D){if(b[D]){return}b[D]=n[A]=1;var C=u.createElement("script"),B=0;C.onload=C.onreadystatechange=function(){if((C[a]&&!(m.test(C[a])))||B){return}C.onload=C.onreadystatechange=null;B=1;z()};C.async=1;C.src=D;r.parentNode.insertBefore(C,r)})},0);return $script};$script.ready=function(w,l,s){w=(typeof w==j)?[w]:w;var f=[];!c(w,function(x){(q[x])||f.push(x)})&&v(w,function(x){return(q[x])})?l():(function(x){t[x]=t[x]||[];t[x].push(l);s&&s(f)}(w.join("|")));return $script};$script.domReady=function(f){g?f():i.push(f)}}(window,document));
+		$script('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', 'jquery');
+		$script('//static.getclicky.com/js', function() {
+			try{ clicky.init(195891); }catch(err){}
+		});
+		$script.ready(['jquery'], function(){
+			$script('https://media.artgallery.nsw.gov.au/chrome/scripts/jquery.slideto.min.js', 'slideto');
+			$script('//code.jquery.com/ui/1.9.2/jquery-ui.min.js', 'jqueryui');
+			$script('https://media.artgallery.nsw.gov.au/chrome/fancybox/jquery.fancybox.pack.js?v=2.1.4', 'fancybox');
+
+			$script.ready(['fancybox'], function() {
+				$script('https://media.artgallery.nsw.gov.au/chrome/fancybox/jquery.fancybox-buttons.js?v=1.0.5', 'buttons');
+			});
+		});
+	//]]></script><script type="text/javascript" src="https://media.artgallery.nsw.gov.au/CACHE/js/66e59c541e92.js"></script><script type="text/javascript">
+  window.artsets = window.artsets || {};
+  artsets.common_scripts = [];
+  
+    artsets.common_scripts.push('//media.artgallery.nsw.gov.au/static/gen/artsets_common.803922ae.js');
+    
+  
+  
+  artsets.global_scripts = [];
+  
+    artsets.global_scripts.push('//media.artgallery.nsw.gov.au/static/gen/artsets_global.2762555e.js');
+  
+  
+  artsets.load_scripts = function(scripts) {
+    // loads a list of scripts relative to the artsets directory
+    for (var i = 0; i < scripts.length; i++) {
+      $script(scripts[i], scripts[i]);
+    }
+  };
+</script><script src="//media.artgallery.nsw.gov.au/static/gen/artsets_global_stub.f1a9a919.js" type="text/javascript"></script><script type="text/javascript">
+  $script.ready(['jquery'], function() {
+	var scripts = [];
+	
+	  scripts.push('//media.artgallery.nsw.gov.au/static/gen/collection.582ac048.js');
+	
+
+	artsets.load_scripts(scripts);
+	$script.ready(scripts, function() {
+	  collection.init();
+	});
+  });
+  $script('https://media.artgallery.nsw.gov.au/chrome/scripts/audio-player.js', 'audio');
+  $script.ready(['audio', 'jquery'], function(){
+      AudioPlayer.setup("https://media.artgallery.nsw.gov.au/chrome/player.swf", {animation: "no",width: 290});
+  });
+</script></head><body>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P934F8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P934F8');</script>
+
+
+<div id="container"><p class="offScreen"><a href="#content">Skip to content</a></p><div id="header"><p id="device-warning"><a href="https://m.artgallery.nsw.gov.au/collection/works/477.1979/"><strong>For a better experience, switch to </strong><span class="button">Mobile Version &raquo;</span></a></p><div id="logo"><a href="/"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/agnsw_94x94_black.svg" width="94" height="94" alt="agnsw" class="svg agnsw " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/agnsw_94x94_black.png" width="94" height="94" alt="agnsw" class="png agnsw " /><![endif]--></a></div><div id="primary-nav"><ul><li><a href="/visit-us/">Visit us</a></li><li><a href="/about-us/">About us</a></li><li><a href="/members/">Members</a></li><li><a href="/whats-on/">What’s on</a></li><li><a href="/education/">Education</a></li><li><a href="/media-office/">Media office</a></li><li><a href="/discover-art/">Discover art</a></li><li><a href="/research/">Research</a></li><li><a href="/channel/">Gallery channel</a></li><li><a href="/collection/">Collection</a></li><li><a href="/support-us/">Support us</a></li><li><a href="/shop/">Shop</a></li></ul><div class="artsets-header-nav"><a href="/artsets/" class="main">Art Sets</a><div class="user"
+					     data-load_url="/artsets/_header-nav"></div></div></div><div id="search"><form action="/search/" method="get"><label for="keywords" class="offScreen">Search</label><input type="text" class="text-input" id="keywords" name="q" value="Search" /><input type="submit" class="button" value="Go" /></form></div></div>
+		
+<article class='collection_work'>
+	<hgroup>
+		<h1>
+			<a href="/collection/">Collection</a>
+		</h1>
+		<p class="clear">
+			<a href="/collection/">All</a>
+		</p>
+		<p>
+			<a href="/collection/works/">Search</a>
+		</p>
+
+		
+			<p class='right'>
+				<a href='/collection/pacific-art/'>
+					Pacific art
+				</a>
+			</p>
+		
+		<p class='right'>
+			View More:
+		</p>
+	</hgroup>
+
+	<div class='hero'>
+		<div class='left'>
+			<div>
+				<hr />
+				<h6>Title</h6>
+				<h1 class="title">
+					Shield
+				</h1>
+				
+        			<div>
+        				<p>
+        					early 20th century<br/>collected circa 1972
+        				</p>
+        			</div>
+        		
+
+			</div>
+			<div>
+				<hr />
+				<h6>
+					Artists
+				</h6>
+				
+					<h1>Unknown Artist</h1>
+				
+			</div>
+		</div>
+		<div class='right'>
+			<div class='primaries'>
+				
+			</div>
+
+			
+				
+					<img src="https://media.artgallery.nsw.gov.au/chrome/images/template/artwork/NIA_499x372.png" width="499" height="372" alt="" /> 
+				
+			
+		</div>
+	</div>
+
+	<div class='tabs' id='tabs'>
+		
+		<nav>
+			
+			
+			
+			
+			
+			
+            
+			
+			
+			
+			
+			<div id="article-info">
+			  
+				<div class="artsets-add artsets-add-desktop">
+  <a class="add-link" href="/artsets/global/add?ids=7572&amp;ctype=sqlcollection.work"><span>Art Set</span>
+  
+  </a>
+</div>    
+			  
+			</div>
+		</nav>
+		<div class='left column '>
+			
+
+			
+
+			
+
+
+			
+		</div>
+		<div class='right column  always_full'>
+			
+	
+<div id='details'
+     class='tab '>
+	<hr />
+	<h1>
+		Details
+	</h1>
+	<div>
+		<div><hr /><h6>
+					Place where the work was made
+				</h6><p><a href="/collection/works/?origin_id=papua-new-guinea.eastern-highlands-province.kainantu-district.abaninofi">
+								Abaninofi
+							</a> &rarr; 
+						
+							<a href="/collection/works/?origin_id=papua-new-guinea.eastern-highlands-province.kainantu-district">
+								Kainantu District
+							</a> &rarr; 
+						
+							<a href="/collection/works/?origin_id=papua-new-guinea.eastern-highlands-province">
+								Eastern Highlands Province
+							</a> &rarr; 
+						
+							<a href="/collection/works/?origin_id=papua-new-guinea">
+								Papua New Guinea
+							</a><br/></p></div><div><hr /><h6>Cultural origin</h6><p><a href="/collection/works/?cultural_origin=Kamano-Kafe people">
+						Kamano-Kafe people
+					</a></p></div><div><hr /><h6>
+					Dates
+				</h6><p>
+					early 20th century<br/>collected circa 1972
+				</p></div><div><hr /><h6>
+					Media category
+				</h6><p><a href="/collection/works/?media=arms-armour">
+							Arms &amp; armour
+						</a></p></div><div><hr /><h6>Materials used</h6><p>
+					stone-carved wood, blackened and polished, cane, 2-ply plant fibre thread, barkcloth cord handle
+				</p></div><div><hr /><h6>
+					Dimensions
+				</h6><p>
+					
+						138.0 x 50.0 x 7.0 cm
+						:</p><p>
+					 
+					
+						0 - Whole; 138 cm; approx.</p><p>
+					
+						0 - Whole; 50 cm; approx.</p><p>
+					
+						0 - Whole; 7 cm; approx.</p><p></p></div><div class='credit'><hr /><h6>Credit</h6><p>Gift of Jean Moriarty 1979</p></div><div><hr /><h6>Location</h6><p>Not on display</p></div><div><hr /><h6>Accession number</h6><p>477.1979</p></div><div class='copyright'><hr /></div><div class='artists'><hr /></div><div class='share'><hr /><h6>URL / Share</h6><p><br />
+				
+					Shield
+				
+			</p><a href='https://twitter.com/intent/tweet?text=Shield%20-&url=http://www.artgallery.nsw.gov.au/collection/works/477.1979/&via=ArtGalleryofNSW' target='_blank'><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/twitter_20x20_black.svg" width="20" height="20" alt="twitter" class="svg twitter " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/twitter_20x20_black.png" width="20" height="20" alt="twitter" class="png twitter " /><![endif]--></a><a href='http://facebook.com/sharer.php?u=http://www.artgallery.nsw.gov.au/collection/works/477.1979/' target='_blank'><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/facebook_20x20_black.svg" width="20" height="20" alt="facebook" class="svg facebook " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/facebook_20x20_black.png" width="20" height="20" alt="facebook" class="png facebook " /><![endif]--></a></div>
+	</div>
+</div>
+
+
+			
+				
+			
+
+			
+			
+			
+
+			
+            
+		</div>
+	</div>
+
+	<aside class='other_works'>
+		
+	</aside> 
+</article>
+
+
+<footer class="vcard"><h3 class="fn org">Art Gallery of New South Wales</h3><nav id="basic"><div id="address"><p><span class="adr">Art Gallery Rd, The Domain 2000<br />Sydney, Australia</span><br />Info line <span class="tel">1800 679 278</span><span class="geo"><span class="latitude"><span class="value-title" title="-33.868589"></span></span><span class="longitude"><span class="value-title" title="151.216958"></span></span></span></p></div><div id="social"><h4>Follow</h4><ul><li><a href="/twitter/" class="twitter" title="AGNSW on Twitter"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/twitter_20x20_black.svg" width="20" height="20" alt="twitter" class="svg twitter " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/twitter_20x20_black.png" width="20" height="20" alt="twitter" class="png twitter " /><![endif]--></a></li><li><a href="/facebook/" class="facebook" title="AGNSW on Facebook"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/facebook_20x20_black.svg" width="20" height="20" alt="facebook" class="svg facebook " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/facebook_20x20_black.png" width="20" height="20" alt="facebook" class="png facebook " /><![endif]--></a></li><li><a href="/instagram/" class="instagram" title="AGNSW on Instagram"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/instagram_20x20_black.svg" width="20" height="20" alt="instagram" class="svg instagram " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/instagram_20x20_black.png" width="20" height="20" alt="instagram" class="png instagram " /><![endif]--></a></li><li><a href="/youtube/" class="youtube" title="AGNSW on YouTube"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/youtube_20x20_black.svg" width="20" height="20" alt="youtube" class="svg youtube " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/youtube_20x20_black.png" width="20" height="20" alt="youtube" class="png youtube " /><![endif]--></a></li></ul></div><div id="hours"><h4>Open daily</h4><p><a href="/visit-us/plan-your-visit/opening-hours/">See opening hours and admission</a><br />
+                        Closed Good Friday &amp; Christmas Day
+                    </p></div></nav><nav id="extras"><div id="alternatives"><h4>Visitor information</h4><ul><li><a href="/visit-us/information-in-other-languages/">Deutsch</a></li><li><a href="/visit-us/information-in-other-languages/">Français</a></li><li><a href="/visit-us/information-in-other-languages/">日本語</a></li><li><a href="/visit-us/information-in-other-languages/">中文</a></li><li><a href="/visit-us/information-in-other-languages/">Español</a></li><li><a href="/visit-us/information-in-other-languages/">Italiano</a></li><li><a href="/visit-us/information-in-other-languages/">한국어</a></li><li><a href="/visit-us/information-in-other-languages/">العربية</a></li></ul><p id="access"><a href="/visit-us/access/"><img src="https://media.artgallery.nsw.gov.au/chrome/images/access.png" height="30" alt="" /></a></p><p id="wifi"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/wifi_26x26_black.svg" width="26" height="26" alt="wifi" class="svg wifi " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/wifi_26x26_black.png" width="26" height="26" alt="wifi" class="png wifi " /><![endif]--> WiFi available<br />throughout the Gallery</p><p id="mobile"><a href="https://m.artgallery.nsw.gov.au/collection/works/477.1979/"><!--[if gte IE 8]><!--><img src="https://media.artgallery.nsw.gov.au/iconomizer/mobile_26x26_black.svg" width="26" height="26" alt="mobile" class="svg mobile " /><!--<![endif]--><!--[if lt IE 8]><img src="https://media.artgallery.nsw.gov.au/iconomizer/mobile_26x26_black.png" width="26" height="26" alt="mobile" class="png mobile " /><![endif]--> Mobile version</a></p></div><div id="quicklinks"><h4>Quick links</h4><ul class="shortcuts"><li><a href="/about-us/contact-the-gallery/">Contact us</a></li><li><a href="/about-us/keep-me-updated/">Keep me updated</a></li><li><a href="/visit-us/plan-your-visit/getting-here/">Getting here</a></li><li><a href="/venues/">Floorplan</a></li><li><a href="/art-after-hours/">Art After Hours</a></li></ul><ul class="shortcuts"><li><a href="/blog/">Blog</a></li><li><a href="/prizes/">Prizes</a></li><li><a href="/insideartexpress/">Inside ARTEXPRESS</a></li><li><a href="http://www.google.com/culturalinstitute/collection/art-gallery-of-new-south-wales">Google Art Project</a></li><li><a href="/sydney-modern-project/">Sydney Modern Project</a></li></ul></div></nav><nav id="legal"><ul><li><a href="/about-us/about-website/website-accessibility/">Accessibility</a></li><li><a href="/about-us/about-website/disclaimer/">Disclaimer</a></li><li><a href="/privacy">Privacy</a></li><li><a href="/about-us/about-website/links-policy/">Links policy</a></li><li><a href="http://nsw.gov.au/">NSW Government</a></li><li><a href="/about-us/about-website/copyright-policy/">Copyright policy</a></li><li class="last"><a href="/about-us/contact-the-gallery/website-feedback/?referrer=https://www.artgallery.nsw.gov.au/collection/works/477.1979/">Feedback</a></li></ul></nav></footer></div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"4f4dd4a777","agent":"","transactionName":"Z1cHZUZTWktZVUVYDl4dI0RaUUBRV1geQhBcUQpdWFdXTFFZXx8XWVcSQg5bQF1V","applicationID":"598312","errorBeacon":"bam.nr-data.net","applicationTime":2616}</script>
+
+</body>
+</html>

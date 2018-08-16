@@ -8,18 +8,31 @@ from bs4 import BeautifulSoup
 # https://www.artgallery.nsw.gov.au/collection/works/
 
 piece_url = 'https://www.artgallery.nsw.gov.au/collection/works/477.1979/'
-base_target_link = 'https://www.artgallery.nsw.gov.au/collection/works/?page='
-page_result = soup.find('article', attrs={'class': 'collection_work'})
+page = urllib2.urlopen(piece_url)
+soup = BeautifulSoup(page, 'html.parser')
+
+piece_url_2 = 'https://www.artgallery.nsw.gov.au/collection/works/168.1981/'
+page_2 = urllib2.urlopen(piece_url_2)
+soup_2 = BeautifulSoup(page_2, 'html.parser')
+
+work_detail = soup.find('div', attrs={'id': 'details'})
+location = re.sub ('\s+', ' ', work_detail.p.text.strip()))
+
+work_origin_raw = soup2.find('div', attrs={'class': 'artist'}).p.text.strip()
+work_origin = re.sub ('\s+', ' ', work_origin_raw)
+
+
+
+
+
 
 #https://www.artgallery.nsw.gov.au/collection/works/168.1981/
 
 page = urllib2.urlopen(piece_url)
 soup = BeautifulSoup(page, 'html.parser')
-#soup.find('article', attrs={'class': 'collection_work'}).find('div', attrs={'class': 'hero'}).find('div', attrs={'class': 'left'}).find('h1', attrs={'class': 'title'}).text.strip()
-
 work_title = soup.find('h1', attrs={'class': 'title'}).text.strip()
 work_dated = soup.find('article', attrs={'class': 'collection_work'}).find('div', attrs={'class': 'hero'}).find('div', attrs={'class': 'left'}).find('div').p.get_text(strip=True, separator=" - ")
-
+work_country = 
 
 Title 
 Year Made (this should be with the title)

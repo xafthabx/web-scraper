@@ -6,12 +6,12 @@ from bs4 import BeautifulSoup
 # https://www.artgallery.nsw.gov.au/collection/works/?page=1
 # https://www.artgallery.nsw.gov.au/collection/works/?page=543
 # https://www.artgallery.nsw.gov.au/collection/works/
-
+#https://www.artgallery.nsw.gov.au/collection/works/50.2014/
 
 base_target_link = 'https://www.artgallery.nsw.gov.au/collection/works/?page='
 
 output_file = open('list-of-works.csv', 'w')
-print >> output_file, "artist name, title, ref, url"
+print >> output_file, "artist name, title, country, ref, url"
 
 for i in range(543):
     target_link = base_target_link + str(i)
@@ -31,8 +31,17 @@ for i in range(543):
         piece_ref = result.find('span', attrs={'class': 'meta'}).text.encode('utf-8').strip()
         piece_href = result.find('a')['href'].encode('utf-8')
         piece_url = 'https://www.artgallery.nsw.gov.au' + piece_href
-        work = "\"{0}\",\"{1}\", {2}, {3}".format(artist_name, piece_title, piece_ref, piece_url)
+        ###go to each work page
+        page2 = urllib2.urlopen(piece_url)
+        soup2 = BeautifulSoup(page2, 'html.parser')
+        try:
+            work_origin_raw = soup2.find('div', attrs={'class': 'artist'}).p.text.strip()
+            work_origin = re.sub ('\s+', ' ', work_origin_raw)
+        except:
+            work_origin = "NOT FOUND"
+        work = "\"{0}\",\"{1}\",\"{2}\", {3}, {4}".format(artist_name, piece_title, work_origin, piece_ref, piece_url)
         all_works.append(work)
+        print work
         print >> output_file, work
 
     print all_works
