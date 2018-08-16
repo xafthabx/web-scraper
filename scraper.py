@@ -35,13 +35,13 @@ for i in range(543):
         page2 = urllib2.urlopen(piece_url)
         soup2 = BeautifulSoup(page2, 'html.parser')
         try:
-            work_origin_raw = soup2.find('div', attrs={'class': 'artist'}).p.text.strip()
+            work_origin_raw = soup2.find('div', attrs={'class': 'artist'}).p.text.encode('utf-8').strip()
             work_origin = re.sub ('\s+', ' ', work_origin_raw)
         except:
             work_origin = "NOT FOUND"
 
         try:
-            piece_year = soup2.find('article', attrs={'class': 'collection_work'}).find('div', attrs={'class': 'hero'}).find('div', attrs={'class': 'left'}).find('div').p.get_text(strip=True, separator=" ").strip()
+            piece_year = soup2.find('article', attrs={'class': 'collection_work'}).find('div', attrs={'class': 'hero'}).find('div', attrs={'class': 'left'}).find('div').p.get_text(strip=True, separator=" ").encode('utf-8').strip()
         except:
             piece_year = "NOT FOUND"
         work = "\"{0}\",\"{1}\",\"{2}\",\"{3}\",{4}, {5}".format(artist_name, piece_title, work_origin, piece_year, piece_ref, piece_url)
