@@ -13,7 +13,9 @@ base_target_link = 'https://www.artgallery.nsw.gov.au/collection/works/?page='
 output_file = open('list-of-works.csv', 'w')
 print >> output_file, "artist name,title,country,year,ref,url"
 
-for i in range(543):
+bad_links = []
+
+for i in range(1, 544):
     target_link = base_target_link + str(i)
     #target_link = base_target_link + '2'
     print target_link
@@ -32,7 +34,12 @@ for i in range(543):
         piece_href = result.find('a')['href'].encode('utf-8')
         piece_url = 'https://www.artgallery.nsw.gov.au' + piece_href
         ###go to each work page
-        page2 = urllib2.urlopen(piece_url)
+        try:
+            page2 = urllib2.urlopen(piece_url)
+        except:
+            page2 = ''
+            bad_links.append(piece_url)
+
         soup2 = BeautifulSoup(page2, 'html.parser')
         try:
             work_origin_raw = soup2.find('div', attrs={'class': 'artist'}).p.text.encode('utf-8').strip()
@@ -58,3 +65,9 @@ for i in range(543):
 
     print all_works
 output_file.close()
+
+thefile = open('bad_links.txt', 'w')
+for item in bad_links:
+      thefile.write("%s\n" % item)
+
+thefile.close()
